@@ -5,6 +5,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NOIR NEXT TOPPERS</title>
+<script>
+// ===== NOIR EXPIRY - 30 OCT 2026 =====
+const EXPIRY_TIME = new Date("2026-10-30T23:59:59").getTime();
+setInterval(function(){
+  if(Date.now() > EXPIRY_TIME){
+    document.documentElement.innerHTML = '<div style="height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#0b0b0f;color:#fff;font-family:sans-serif;text-align:center;padding:20px"><h1 style="color:#ff83d1;font-size:36px">⏰ Time Khatam!</h1><p>NOIR NEXT TOPPERS Expired</p><p style="color:#aaa">Expired on 30 Oct 2026</p><p>Contact Admin</p></div>';
+  }
+},1000);
+</script>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#0b0b0f;color:#f7f3f7;font-family:Arial,sans-serif}
